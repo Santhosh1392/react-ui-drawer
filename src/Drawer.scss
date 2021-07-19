@@ -1,0 +1,101 @@
+.drawer-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  z-index: 99999999999999;
+  animation: 0.5s ease-out 0s 1 easeOpacityIn;
+
+  .close-icon {
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+  }
+
+  .drawer-content {
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    width: 320px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .drawer-content.left {
+    left: 0;
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .drawer-content.right {
+    animation: 0.5s ease-out 0s 1 slideInFromRight;
+    right: 0;
+  }
+
+  .drawer-content.top {
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+    top: 0;
+    height: 350px;
+    width: 100%;
+  }
+
+  .drawer-content.bottom {
+    animation: 0.5s ease-out 0s 1 slideInFromBottom;
+    bottom: 0;
+    height: 350px;
+    width: 100%;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    left: -350px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    right: -350px;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    top: -350px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    bottom: -350px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes easeOpacityIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
