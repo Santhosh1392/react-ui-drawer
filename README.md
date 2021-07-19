@@ -44,6 +44,11 @@ const DrawerDemo = () => {
 
 ## Drawer Positions Available
 
+## Demo
+![Tag Input Demo](https://github.com/Santhosh1392/react-ui-drawer/blob/main/demo/drawer.gif)
+
+Check out [Online Demo](https://ky6tb.csb.app/) here.
+
 ```sh
 import React, { useState } from 'react'
 import Drawer from 'react-ui-drawer'
@@ -114,10 +119,6 @@ const DrawerDemo = () => {
   )
 }
 ```
-## Demo
-![Tag Input Demo](https://github.com/Santhosh1392/react-ui-drawer/blob/main/demo/drawer.gif)
-
-Check out [Online Demo](https://ky6tb.csb.app/) here.
 
 ## Available PropTypes
 
